@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    width: 100%;
+    background-image: url(../images/football_1920.jpg);
+    background-size: cover;
+        
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    z-index: 10001;
+}
+
+.header::after {
+    content: "";
+    background-color: #0a0e34;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    opacity: 0.9;
+}
+
+.wrapper {
+    z-index: 10001;
+    padding: 2% 10% 5%;
+}
+
+.logo {
+    width: 190px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro {
+    margin-top: 15.5%;
+    margin-bottom: 11.6%;
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans_Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro_text {
+    text-transform: uppercase;
+    font-family: OpenSans-Regular, sans-serif;
+    /*letter-spacing: 5px;*/
+    font-size: 5.625rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.line-two {
+    align-self: flex-end;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    border: 1px solid #5e42b0;
+    border-radius: 50px 50px 50px 50px;
+    width: 310px;
+    background-color: #5e42b0;
+    padding: 25px;
+}
+
+.download-link {
+    display: block;
+    text-decoration: none;
+    
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.svg-icon {
+    fill: #ffffff;
+    width: 3rem;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.download-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-text {
+    font-family: OpenSans-Regular, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-right: 30px;
+}
+
+.download-store {
+    font-family: OpenSans-Regular, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.main-content::before {
+    content: "";
+    background-image: url(../images/footballer_566.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -50px;
+    top: 28px;
+    width: 50%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans_Bold.woff);
+    font-weight: 700;
+    font-style: bold;
+}
+
+.title {
+    margin-top: 115px;
+    margin-bottom: 110px;
+    font-family: OpenSans-Bold, sans-serif;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /*width: 50%;*/
+}
+
+.card-title {
+    display: flex;
+}
+
+.number {
+    color: #000000;
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.main-content-reverse .growth .number {
+    color: #9173e6;
+}
+
+.number::after {
+    content: "";
+    width: 19px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #5e42b0;
+    
+    display: block;
+    margin-top: 7px;
+}
+
+.growth .number::after {
+    background-color: #efefef;
+}
+
+.card-name {
+    font-family: OpenSans-Bold, sans-serif;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card-description {
+    font-family: OpenSans-Regular, sans-serif;
+    line-height: 28px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+
+.growth .card-description {
+    color: #ffffff;
+}
+
+.collaboration-color {
+    background-color: #f6f4fa;
+    padding-left: -100%;
+    padding-right: -100%;
+}
+
+.growth-color {
+    background-color: #5e42b0;
+}
+
+.connection, .collaboration, .growth {
+    width: 50%;
+}
+
+.main-content-reverse .growth {
+    background-color: #0a0e34;
+}
+
+.main-content-reverse {
+    position: relative;
+}
+
+.main-content-reverse::before {
+    content: "";
+    background-image: url(../images/basketballer_991.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
