@@ -125,15 +125,9 @@ header {
     font-weight: 700;
 }
 
-.main {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
 .main-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     position: relative;
 }
 
@@ -143,7 +137,7 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    left: -50px;
+    right: 50%;
     top: 28px;
     width: 50%;
     height: 100%;
@@ -158,7 +152,7 @@ header {
 
 .title {
     margin-top: 115px;
-    margin-bottom: 110px;
+    
     font-family: OpenSans-Bold, sans-serif;
     color: #e7e7e7;
     text-transform: uppercase;
@@ -169,7 +163,16 @@ header {
 .card {
     display: flex;
     flex-direction: column;
-    /*width: 50%;*/
+    width: 50%;
+    
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-content .card {
+    margin-left: auto;
+    padding-right: 10%;
 }
 
 .card-title {
@@ -218,7 +221,6 @@ header {
     font-size: 20px;
     font-weight: 400;
     margin-top: 32px;
-    margin-bottom: 60px;
 }
 
 .growth .card-description {
@@ -227,19 +229,24 @@ header {
 
 .collaboration-color {
     background-color: #f6f4fa;
-    padding-left: -100%;
-    padding-right: -100%;
 }
 
 .growth-color {
     background-color: #5e42b0;
 }
 
-.connection, .collaboration, .growth {
+.main-content-reverse .card {
+    margin-right: auto;
     width: 50%;
+
+    padding-left: 10%;
 }
 
-.main-content-reverse .growth {
+.main-content-reverse .collaboration-color {
+    background-color: #f5f6f7;
+}
+
+.main-content-reverse .growth-color {
     background-color: #0a0e34;
 }
 
